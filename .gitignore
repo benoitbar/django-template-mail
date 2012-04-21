@@ -1,0 +1,5 @@
+*.pyc
+*.sublime*
+django_template_mail.egg-info
+/dist
+/build
