@@ -7,8 +7,9 @@ Django-Template-Mail
 Get started
 ===========
 
-Installing ::
+Installing
 ----------
+::
 
     pip install django-template-mail
 
