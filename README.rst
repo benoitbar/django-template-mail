@@ -23,7 +23,7 @@ django-template-mail ships with same backends as Django (https://docs.djangoproj
 Convert HTML into plain text
 ----------------------------
 
-By default, django-template-backend use a minimalist process to convert HTML into plain text. I suggest you to use **html2text** (https://github.com/aaronsw/html2text) ::
+By default, django-template-backend uses a minimalist process to convert HTML into plain text. I suggest you to use **html2text** (https://github.com/aaronsw/html2text) ::
 
     EMAIL_HTML2TEXT = 'html2text.html2text'
 
@@ -34,7 +34,7 @@ You can also write your own method and use it ::
 Sending emails
 ==============
 
-To send email with django-template-mail you simply should use the method described in the Django documentation (https://docs.djangoproject.com/en/dev/topics/email/) and replacing the **message** attribute as a tuple **('directory_template/template.html', {'key': 'value'}, context_instance)** ::
+To send email with django-template-mail you simply should use the method described in the Django documentation (https://docs.djangoproject.com/en/dev/topics/email/) and replace the **message** attribute as a tuple **('directory_template/template.html', {'key': 'value'}, context_instance)** ::
     
     from django.core.mail import send_mail
     send_mail( 
@@ -52,7 +52,7 @@ To send email with django-template-mail you simply should use the method describ
         fail_silently=False
     )
 
-django-template-mail looked in django template directories/loaders ::
+django-template-mail looks into django template directories/loaders ::
 
     <p>Hi {{full_name}},</p> 
     <p>
